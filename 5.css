@@ -1,0 +1,18 @@
+#imagenes{
+    /* posicion relative para que los hijos con absolute 
+    se calculen respecto a #imagenes */
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#img1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#img2, #img3{
+    position: relative;
+    left: 160px;
+}

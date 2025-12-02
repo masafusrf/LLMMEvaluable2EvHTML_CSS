@@ -1,0 +1,16 @@
+div{
+    width: 400px;
+    height: 150px;
+    background-color: blueviolet;
+    border: 4px dotted black;
+    margin: 50px;
+    padding: 40px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    /* la letra estará en mayus */
+    text-transform: uppercase;
+}

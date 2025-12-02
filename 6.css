@@ -1,0 +1,17 @@
+/* creo el borde que envuelve al bloque */
+#bloque{
+    border: 3px solid grey;
+}
+
+/* añado margen a los elementos */
+img, p{
+    margin:20px 0px 0px 20px;
+}
+
+/* la img esta posicionada respecto al navegador,
+por la position absolute ha salido de #bloque */
+img{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

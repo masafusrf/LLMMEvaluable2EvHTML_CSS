@@ -1,0 +1,71 @@
+#bloque{
+    width: 100%;
+}
+
+/* formulario */
+
+form{
+    border: 1px solid black;
+    width: 50%;
+    float: left;
+}
+
+#apellido1, #apellido2, #email{
+    width: 85%;
+}
+
+#enviar{
+    position: relative;
+    left: 190px;
+    margin-bottom: 10px;
+}
+
+h3, label, input{
+    margin-left: 10px;
+}
+
+/* los input con cajas de texto */
+input[type="text"]:focus{
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+
+/* barra navegación */
+
+nav{
+    border: 1px solid black;
+    height: 250px;
+    width: 25%;
+    float: left;
+    margin-left: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5%;
+}
+
+
+nav ul li{
+    margin-bottom: 25px;
+}
+
+nav ul li a{
+    text-decoration: underline;
+}
+
+/* Pseudoclases orden: lvfha*/
+
+a:link{
+    color: #CC0000;
+}
+
+a:visited{
+    color: #ccc;
+}
+
+a:hover{
+    background-color: #CC0000;
+    color: #FFF;
+}

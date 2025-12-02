@@ -1,0 +1,17 @@
+
+/* aplicamos el azul a todo el li */
+#formacion li,
+#experiencia li{
+    color: blue;
+}
+
+/* despues recupero el negro solo para la negrita */
+#formacion li strong,
+#experiencia li strong{
+    color: black;
+}
+
+/* flotamos todos a la izquierda para que se pongan en fila */
+#formacion, #personales, #experiencia{
+    float: left;
+}
