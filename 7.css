@@ -1,15 +1,13 @@
-#bloque{
-    width: 100%;
-    display: flex;            /*filas en forma flexible */
-    flex-direction: column;   /*filas se ponen una debajo de otra */
-    align-items: center;      /* centra filas horizontalmente */
-    gap: 50px;                /*espacio entre filas (gap separa hijos automáticamente) */
-    margin-top: 50px;         /* espacio arriba del bloque (margin es individual)*/
+#bloque {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center; /* para centrar el contenedor */
+}
+
+img{
+    margin: 10px;
 }
 
 .fila1, .fila2, .fila3{
-    display: flex;            /*imágenes se en fila */
-    justify-content: center;  /* Centra imágenes en la fila */
-    gap: 50px;                /* espacio entre imágenes dentro de la fila (gap funciona en flex/grid) */
+    display: block;
 }
-

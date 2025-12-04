@@ -1,6 +1,7 @@
 /* creo el borde que envuelve al bloque */
 #bloque{
     border: 3px solid grey;
+    position: relative;
 }
 
 /* añado margen a los elementos */
@@ -14,4 +15,6 @@ img{
     position: absolute;
     top: 50px;
     left: 50px;
+    /* top y left hacen que esten a 50px
+    de su elemento "padre" q es bloque */
 }

@@ -1,157 +1,78 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-}
-
-h2 {
-    font-size: 32px;
+h2{
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
-form > ul {
+li{
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
 }
 
-form > ul > li {
-    display: flex;
-    flex-direction: column;
-}
-
-/* El último li (botón) ocupa las dos columnas */
-form > ul > li:last-child {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.titulo {
+.titulo{
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 15px;
-    display: block;
+    font-size: 15px;
 }
 
-.requerido {
-    color: red;
+label:not(.titulo){
+    font-size: 10px;
 }
 
-/* Contenedor de inputs */
-form > ul > li > div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+span.requerido{
+    color: #cc0000;
 }
 
-form > ul > li > div > span {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+option, input, select{
+    height: 25px;
+    margin-top: 15px;
 }
 
-/* Labels de los inputs */
-form > ul > li > div > span > label {
-    font-size: 12px;
-    color: #999;
-    margin-top: 5px;
+#nombre, #municipio,#codigopostal #pais, #telefonofijo, #telefonomovil, select{
+    width:200px;
 }
 
-/* Inputs de texto */
-input[type="text"],
-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    width: 100%;
-}
-
-/* Selects */
-select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    width: 100%;
-    background-color: white;
-}
-
-/* Textos de ayuda */
-.ayuda {
-    font-size: 12px;
-    color: #666;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-/* Ajustes específicos para campos de dirección */
-li:nth-child(2) > div {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-li:nth-child(2) > div > span:nth-child(2),
-li:nth-child(2) > div > span:nth-child(3) {
-    display: inline-block;
-    width: 48%;
-}
-
-li:nth-child(2) > div > span:nth-child(2) {
-    margin-right: 4%;
-}
-
-li:nth-child(2) > div > span:nth-child(4),
-li:nth-child(2) > div > span:nth-child(5) {
-    display: inline-block;
-    width: 48%;
-}
-
-li:nth-child(2) > div > span:nth-child(4) {
-    margin-right: 4%;
-}
-
-/* Layout de teléfonos */
-li:nth-child(4) > div {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-li:nth-child(4) > div > span {
-    flex: 1;
-}
-
-/* Botón de submit */
-input[type="submit"] {
-    background-color: #e8e8e8;
-    border: 1px solid #999;
-    padding: 12px 30px;
-    font-size: 16px;
-    color: #333;
-}
-
-form > ul {
-    position: relative;
+#apellido1, #apellido2, #email, #direccion{
+    width:400px;
 }
 
 
-input:focus,
-select:focus{
-    border: 2px solid #E6B700;
-    outline: none;
-    border-radius: 4px;
+
+#nombre span{
+    float: left;
 }
 
-form ul li:hover{
-    background-color: #FF9;
+
+li:nth-of-type(2){
+    float: left;
+    margin-left: 400px;
+    top: 0;
+}
+
+#dccon input,
+#dccon select {
+    display: block; /* ocupa toda la línea dentro del span */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li:nth-of-type(3){
+    margin-top: 500px;
+
 }

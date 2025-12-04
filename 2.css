@@ -15,16 +15,18 @@ form{
 }
 
 #enviar{
-    position: relative;
-    left: 190px;
+    float: right;
     margin-bottom: 10px;
+    margin-right: 95px;
+    padding: 5px;
 }
 
 h3, label, input{
     margin-left: 10px;
 }
 
-/* los input con cajas de texto */
+/* los input con cajas de texto con foco
+tendran estos valores */
 input[type="text"]:focus{
     border-radius: 5px;
     background-color: lightblue;
@@ -57,14 +59,17 @@ nav ul li a{
 
 /* Pseudoclases orden: lvfha*/
 
+/* estado normal */
 a:link{
     color: #CC0000;
 }
 
+/* visitados */
 a:visited{
     color: #ccc;
 }
 
+/* raton sobre ellos */
 a:hover{
     background-color: #CC0000;
     color: #FFF;

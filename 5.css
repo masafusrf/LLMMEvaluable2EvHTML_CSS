@@ -8,8 +8,16 @@
 
 #img1{
     position: absolute;
+    /* bottom y left lo mueven visualmente 
+    pero el elmto sigue ocupando su espacio
+    original, loq hace q se pueda superponer
+    con otros elmtos, no como margin.
+    solo funciona con la prop. position */
     bottom: 0;
+    /* el bottom 0 lo coloca e el borde inferior del 
+    contenedor padre */
     left: 0;
+    /* el left 0 lo coloca a la izq del cont padre */
 }
 
 #img2, #img3{

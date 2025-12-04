@@ -1,4 +1,4 @@
-div{
+.bloque{
     width: 400px;
     height: 150px;
     background-color: blueviolet;
@@ -7,7 +7,7 @@ div{
     padding: 40px;
 }
 
-p{
+#frase1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     text-align: center;
