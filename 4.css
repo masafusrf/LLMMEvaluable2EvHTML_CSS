@@ -4,11 +4,31 @@ body{
 
 h2{
     font-weight: normal;
-    margin-left: 30px;
 }
 
+/* cambio el width para que haya 2 columnas de li */
 li{
     list-style: none;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* sombra para los input y select */
+li input,
+li select{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* convierto ul en flex para controlar alineacion */
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap hace q elmtos vayan a la linea siguiente
+    si no caben en su fila */
+    justify-content: space-between;
+    /* los elmtos estan horizontalmente
+    1 a la izq 1 al centro 1 a la dcha */
+    padding: 0;
 }
 
 .titulo{
@@ -29,7 +49,7 @@ option, input, select{
     margin-top: 15px;
 }
 
-#nombre, #municipio,#codigopostal #pais, #telefonofijo, #telefonomovil, select{
+#nombre, #municipio,#codigopostal, #pais, #telefonofijo, #telefonomovil, select{
     width:200px;
 }
 
@@ -37,42 +57,45 @@ option, input, select{
     width:400px;
 }
 
+/* los p con clase ayuda no apareceran */
+p.ayuda{
+    display: none;
+}
 
+/* apareceran solo al hacer hover en el li
+que los contenga */
+li:hover p.ayuda{
+    display: block;
+}
 
-#nombre span{
-    float: left;
+hr {
+    height: 1px;
+    width: 200%;
+}
+
+/* los li que no sean hr tendran esto al hacer hover */
+li:not(.hr):hover{
+    background-color: #ff9;
 }
 
 
-li:nth-of-type(2){
-    float: left;
-    margin-left: 400px;
-    top: 0;
-}
-
-#dccon input,
-#dccon select {
-    display: block; /* ocupa toda la línea dentro del span */
+input, select{
+    border: 1px solid #ccc;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-li:nth-of-type(3){
-    margin-top: 500px;
-
+input[type="text"]:hover{
+    border-color: #E6B700;
 }
+
+.enviar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tlf label:not(.titulo){
+    position: absolute;
+    margin-top: 50px;
+}
+

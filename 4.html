@@ -18,20 +18,21 @@
             <ul>
                 <li>
                     <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
-                    <div id="nombre">
+                    <div>
                         <span>
-                            <input id="nombre" name="nombre" value="" />
-                            <label for="nombre">Nombre</label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" value="" />
+                            <br><label for="nombre">Nombre</label><br>
                         </span>
 
                         <span>
-                            <input id="apellido1" name="apellido1" value="" />
-                            <label for="apellido1">Primer apellido</label>
+                            <input type="text" id="apellido1" name="apellido1" value="" />
+                            <br><label for="apellido1">Primer apellido</label><br>
                         </span>
 
                         <span>
-                            <input id="apellido2" name="apellido2" value="" />
-                            <label for="apellido2">Segundo apellido</label>
+                            <input type="text" id="apellido2" name="apellido2" value="" />
+                            <br><label for="apellido2">Segundo apellido</label><br>
                         </span>
                     </div>
 
@@ -43,20 +44,20 @@
                 <li>
                     <label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label>
 
-                    <div id="dccon">
+                    <div>
                         <span>
-                            <input id="direccion" name="direccion" value="" />
-                            <label for="direccion">Calle, número, piso, puerta</label>
+                            <input type="text" id="direccion" name="direccion" value="" />
+                            <br><label for="direccion">Calle, número, piso, puerta</label><br>
                         </span>
 
                         <span>
-                            <input id="codigopostal" name="codigopostal" value="" />
-                            <label for="codigopostal">Código postal</label>
+                            <input type="number" id="codigopostal" name="codigopostal" value="" />
+                            <br><label for="codigopostal">Código postal</label><br>
                         </span>
 
                         <span>
-                            <input id="municipio" name="municipio" value="" />
-                            <label for="municipio">Municipio</label>
+                            <input type="text" id="municipio" name="municipio" value="" /><br>
+                            <br><label for="municipio">Municipio</label><br>
                         </span>
 
                         <span>
@@ -88,9 +89,9 @@
                 <li>
                     <label class="titulo" for="email">Email</label>
 
-                    <div id="email">
+                    <div>
                         <span>
-                            <input id="email" name="email" value="" />
+                            <input type="email" id="email" name="email" value="" />
                         </span>
                     </div>
 
@@ -99,17 +100,17 @@
                     </p>
                 </li>
 
-                <li>
+                <li id="tlf">
                     <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
 
-                    <div id="tlf">
+                    <div>
                         <span>
-                            <input id="telefonofijo" name="telefonofijo" value="" />
+                            <input type="tel" id="telefonofijo" name="telefonofijo" value="" />
                             <label for="telefonofijo">Fijo</label>
                         </span>
 
                         <span>
-                            <input id="telefonomovil" name="telefonomovil" value="" />
+                            <input type="tel" id="telefonomovil" name="telefonomovil" value="" />
                             <label for="telefonomovil">Móvil</label>
                         </span>
                     </div>
@@ -119,7 +120,12 @@
                     </p>
                 </li>
 
-                <li>
+                <!-- hr separa los campos del boton -->
+                <li class="hr">
+                    <hr>
+                </li>
+
+                <li class="enviar">
                     <input id="alta" type="submit" value="Darme de alta &rarr;" />
                 </li>
 
