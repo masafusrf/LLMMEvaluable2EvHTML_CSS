@@ -18,19 +18,6 @@ li input,
 li select{
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
-
-/* convierto ul en flex para controlar alineacion */
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    /* wrap hace q elmtos vayan a la linea siguiente
-    si no caben en su fila */
-    justify-content: space-between;
-    /* los elmtos estan horizontalmente
-    1 a la izq 1 al centro 1 a la dcha */
-    padding: 0;
-}
-
 .titulo{
     font-weight: bold;
     font-size: 15px;
@@ -76,6 +63,7 @@ hr {
 /* los li que no sean hr tendran esto al hacer hover */
 li:not(.hr):hover{
     background-color: #ff9;
+    width: 58%;
 }
 
 
@@ -88,14 +76,12 @@ input[type="text"]:hover{
     border-color: #E6B700;
 }
 
-.enviar{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+#nombre_email{
+    float: left;
+    width: 50%;
 }
 
-#tlf label:not(.titulo){
-    position: absolute;
-    margin-top: 50px;
+#dccon_tlf{
+    float: left;
+    width: 50%;
 }
-

@@ -35,7 +35,7 @@ input[type="text"]:focus{
 
 /* barra navegación */
 
-nav{
+#nav{
     border: 1px solid black;
     height: 250px;
     width: 25%;
